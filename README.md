@@ -17,10 +17,10 @@ composer require gotrex/laravel-whmcs
 From the command-line run:
 
 ```bash
-php artisan vendor:publish --provider=Gotrex\Whmcs\WhmcsServiceProvider
+php artisan vendor:publish --provider="Gotrex\Whmcs\WhmcsServiceProvider"
 ```
 
-Add and populate the following variables to your .env file. Supported auth types are `api` and `password`.
+Add the following keys to your .env file. Supported auth types are `api` and `password`.
 
 ```env
 WHMCS_AUTH_TYPE=api
@@ -34,7 +34,7 @@ WHMCS_RESPONSE_TYPE=json
 
 ## Usage
 
-You can call an WHMCS API function directly by using the facade (e.g. `\Whmcs::{WHMCSAPIFUNCTION}`). This also works with custom API functions contained in your WHMCS API folder.
+You can call an WHMCS API method directly by using the facade (e.g. `\Whmcs::{WHMCSAPIFUNCTION}`). This also works with custom API methods contained in your WHMCS API folder.
 
 ### Examples
 
@@ -78,6 +78,10 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+### Security
+
+If you discover any security related issues, please email development@go-trex.com instead of using the issue tracker.
 
 ## Credits
 
